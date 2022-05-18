@@ -1,17 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { CssBaseline } from "@mui/material";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import App from "./components/App.component";
+import AppGlobalStyles from "./components/AppGlobalStyles.component";
+import AppStoreProvider from "./components/AppStoreProvider.component";
+import AppThemeProvider from "./components/AppThemeProvider.component";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+	<React.StrictMode>
+		<AppStoreProvider>
+			<AppThemeProvider>
+				<CssBaseline />
+				<AppGlobalStyles />
+				<App />
+			</AppThemeProvider>
+		</AppStoreProvider>
+	</React.StrictMode>,
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
