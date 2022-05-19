@@ -2,7 +2,7 @@ import React from "react";
 import Box from "@mui/material/Box";
 
 import SearchBar from "./SearchBar.component";
-import InfomationBox from "./InfomationBox.component";
+import InformationBox from "./InformationBox.component";
 
 function App() {
 	return (
@@ -20,7 +20,7 @@ function App() {
 				</Box>
 			</Box>
 			<Box sx={{ minWidth: "350px" }}>
-				<InfomationBox />
+				<InformationBox />
 			</Box>
 		</Box>
 	);

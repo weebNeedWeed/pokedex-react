@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 
 import noPokemonSelectedImage from "./../assets/images/no-pokemon-selected-image.png";
 
-function InfomationBox() {
+function InformationBox() {
 	return (
 		<Box
 			sx={{
@@ -51,4 +51,4 @@ function InfomationBox() {
 	);
 }
 
-export default InfomationBox;
+export default InformationBox;
