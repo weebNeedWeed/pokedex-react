@@ -10,6 +10,7 @@ const styles = {
 		backgroundPositionX: "-180px",
 		backgroundPositionY: "-80px",
 		backgroundColor: "#F6F8FC",
+		backgroundAttachment: "fixed",
 	},
 };
 

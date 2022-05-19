@@ -23,6 +23,21 @@ const theme = createTheme({
 		fairy: "#FFACFF",
 		shadow: "#0E2E4C",
 	},
+	container: {
+		boxShadow: "#ededed 0 10px 10px",
+		padding: "15px",
+		borderRadius: "20px",
+	},
+	typography: {
+		fontFamily: "'Outfit', sans-serif",
+	},
+	palette: {
+		text: {
+			primary: "#011030",
+			secondary: "#000",
+			tertiary: "#8F9396",
+		},
+	},
 });
 
 function AppThemeProvider({ children }) {
