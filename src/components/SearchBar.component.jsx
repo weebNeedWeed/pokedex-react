@@ -26,7 +26,7 @@ function SearchBar() {
 					border: "none",
 					outline: "none",
 				}}
-				placeholder="Search your pokemon"
+				placeholder="Search your Pokemon"
 			/>
 
 			<Box
@@ -44,6 +44,11 @@ function SearchBar() {
 					minWidth: "40px",
 					border: "none",
 					fontWeight: "bold",
+
+					"&:hover": {
+						opacity: "0.8",
+						boxShadow: "#ff53509c 3px 3px 13px",
+					},
 				}}
 			>
 				<SearchOutlinedIcon />

@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 
 import SearchBar from "./SearchBar.component";
 import InformationBox from "./InformationBox.component";
+import PokemonCard from "./PokemonCard.component";
 
 function App() {
 	return (
@@ -17,6 +18,21 @@ function App() {
 			<Box sx={{ flexBasis: "100%" }}>
 				<Box sx={{ margin: "30px 10px" }}>
 					<SearchBar />
+
+					<Box
+						sx={{
+							display: "flex",
+							flexWrap: "wrap",
+							marginLeft: "-16px",
+							marginTop: "30px",
+						}}
+					>
+						<PokemonCard />
+						<PokemonCard />
+						<PokemonCard />
+						<PokemonCard />
+						<PokemonCard />
+					</Box>
 				</Box>
 			</Box>
 			<Box sx={{ minWidth: "350px" }}>
